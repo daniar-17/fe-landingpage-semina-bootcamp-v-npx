@@ -1,4 +1,4 @@
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 
 export default function errorHandler(error) {
   if (error) {
@@ -6,7 +6,7 @@ export default function errorHandler(error) {
     if (error.response) {
       message = error.response.data.msg;
 
-      if (typeof message === "string") toast.error(message);
+      //   if (typeof message === "string") toast.error(message);
 
       return Promise.reject(error);
     }
